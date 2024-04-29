@@ -11,5 +11,8 @@ const fetchData = async (url: string): Promise<resp> => {
         message: "string",
         data: "any"
     })
-
 }
+(async function () {
+    const respBody = await fetchData("");
+    console.log(respBody)
+}())
