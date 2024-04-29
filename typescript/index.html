@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梅尔牛逼</title>
+</head>
+
+<body>
+    <h1>热烈庆祝🎉真梅尔登神！！！</h1>
+    <h2>芝士点击数量</h2>
+    <h2 id="counter">0</h2>
+    <button id="clickMe">点我</button>
+</body>
+<script>
+    const clickMe = document.getElementById('clickMe');
+    const counter = document.getElementById('counter');
+    let count = 0;
+    clickMe.addEventListener('click', () => {
+        ++count;
+        counter.innerText = count;
+    })
+</script>
+
+</html>
